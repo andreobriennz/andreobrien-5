@@ -1,0 +1,114 @@
+<template>
+    <div>
+        <Nav />
+
+        <section class="About flex-grid space-between">
+            <div class="col-6">
+                <img 
+                    src="https://cdn.andreobriennz.com/portfolio-v3/images/andre-min.jpg" 
+                    alt=""
+                    class="mobile-hide aboutImage">
+            </div>
+
+            <div class="col-6 aboutText">
+                <p>
+                    <strong>About me</strong><br><br>
+                    I'm a web developer with experience working on over twenty projects. 
+                    I enjoy creating complex layouts usings CSS, building dynamic websites and web apps with JavaScript, and using PHP and MySQL on the server. 
+                    Of these, I consider JavaScript to be my greatest strength.
+                    <br><br>
+                    Some of my favourite tools include VueJS, Laravel, October CMS, Bulma, Kube, React and Express.js
+                </p>
+            </div>
+        </section>
+    </div>
+</template>
+
+<script>
+import Nav from './Nav.vue'
+export default {
+    name: 'About',
+    props: {
+        msg: String
+    },
+      components: {
+        Nav
+    },
+}
+
+// ripple effect
+$(function() {
+    ripple()
+
+    function ripple() {
+        $(".rippleContainer").fadeIn(0)
+
+        $(".ripple").fadeIn(0).css({
+            "width": "300vw",
+            "height": "300vw",
+            "transform": "scale(2)"
+        }).fadeOut(400)
+
+        setTimeout( function() {
+            $(".rippleContainer").fadeOut(0);
+            $(".ripple").css({
+                "width": "10px",
+                "height": "10px",
+                "transform": "scale(1)"
+            })
+        }, 600)
+    }
+
+    $("nav").click(function(){ 
+        ripple();
+    });
+});
+
+
+$(document).ready(function() {
+    $('.nav').click(function() {
+        $(this).toggleClass('is-active')
+
+        $('.menu-items').toggleClass('mobile-hide')
+
+        app.mobileNav != app.mobileNav
+    });
+});
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+/* layout */
+.col-6 {
+    margin: 0;
+}
+
+img,
+p {
+    padding: 0 10%;
+}
+
+.aboutImage {
+    height: 100vh;
+    padding-top: 5rem;
+}
+
+.aboutText {
+    color: #fafafa;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.aboutText strong {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.aboutColour {
+    background-color: #2196F3;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 4 4'%3E%3Cpath fill='#757575' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+</style>

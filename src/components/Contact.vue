@@ -1,0 +1,132 @@
+<template>
+    <div>
+        <Nav />
+
+        <section class="flex-grid space-between">
+            <div class="col-6 contactText">
+                <p>
+                    <strong>Get in touch</strong><br><br>
+
+                    Feel free to contact me with any questions or if you would like to chat further
+                    <br><br>
+                    You can also find out more about me through 
+                    <a href="https://github.com/andreobriennz">GitHub</a> and 
+                    <a href="https://www.linkedin.com/in/andreobriennz/">LinkedIn</a>
+                    <span class="desktop-hide">, or simply send me an email below.</span>
+                </p>
+            </div>
+
+            <div class="col-6">
+                <form method="POST" action="/mail/send" class="form">
+                    <div class="form-item">
+                        <label>Name</label>
+                        <input type="name" name="name">
+                    </div>
+
+                    <div class="form-item">
+                        <label>Email</label>
+                        <input type="email" name="email">
+                    </div>
+                
+                    <div class="form-item">
+                        <label>Message</label>
+                        <textarea name="memo" rows="8"></textarea>
+                    </div>
+                
+                    <div class="form-item">
+                        <button class="send">Send</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+</template>
+
+<script>
+import Nav from './Nav.vue'
+export default {
+    name: 'HelloWorld',
+    props: {
+        msg: String
+    },
+    components: {
+        Nav
+    },
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+/* layout */
+.col-6 {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (min-width: 1024px) {
+    .col-6 {
+        padding: 4rem;
+    }
+}
+
+form {
+    width: 100%;
+    padding-top: 4rem;
+}
+
+.contactText {
+    color: #fafafa;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+strong {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+a {
+    color: #fafafa;
+    text-decoration: underline;
+}
+a:hover {
+    background-color: #fafafa;
+    color: #1976D2;
+    text-decoration: none;
+}
+
+/* skin */
+label {
+    color: white;
+    font-weight: bold;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus,
+.send:hover,
+.send:focus {
+    box-shadow: 0.15rem 0.3rem 1rem #555;
+}
+
+.send {
+    font-weight: bold;
+    color: #1976D2;
+    box-shadow: 0.05rem 0.15rem 0.3rem #444;
+}
+
+.send:hover {
+    color: #1976D2;
+    margin-top: -1px;
+}
+
+.contactColour {
+    background-color: #1976D2;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 4 4'%3E%3Cpath fill='#BBDEFB' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+</style>
