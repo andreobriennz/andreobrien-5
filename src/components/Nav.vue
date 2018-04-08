@@ -33,7 +33,7 @@
 export default {
   name: 'Nav',
   props: {
-    msg: String
+    page: String
   }
 }
 </script>
