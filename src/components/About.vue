@@ -1,68 +1,34 @@
 <template>
-    <div>
-        <Nav />
+    <section class="About flex-grid space-between">
+        <div class="col-6">
+            <img 
+                src="https://cdn.andreobriennz.com/portfolio-v3/images/andre-min.jpg" 
+                alt=""
+                class="mobile-hide aboutImage">
+        </div>
 
-        <section class="About flex-grid space-between">
-            <div class="col-6">
-                <img 
-                    src="https://cdn.andreobriennz.com/portfolio-v3/images/andre-min.jpg" 
-                    alt=""
-                    class="mobile-hide aboutImage">
-            </div>
-
-            <div class="col-6 aboutText">
-                <p>
-                    <strong>About me</strong><br><br>
-                    I'm a web developer with experience working on over twenty projects. 
-                    I enjoy creating complex layouts usings CSS, building dynamic websites and web apps with JavaScript, and using PHP and MySQL on the server. 
-                    Of these, I consider JavaScript to be my greatest strength.
-                    <br><br>
-                    Some of my favourite tools include VueJS, Laravel, October CMS, Bulma, Kube, React and Express.js
-                </p>
-            </div>
-        </section>
-    </div>
+        <div class="col-6 aboutText">
+            <p>
+                <strong>About me</strong><br><br>
+                I'm a web developer with experience working on over twenty projects. 
+                I enjoy creating complex layouts usings CSS, building dynamic websites and web apps with JavaScript, and using PHP and MySQL on the server. 
+                Of these, I consider JavaScript to be my greatest strength.
+                <br><br>
+                Some of my favourite tools include VueJS, Laravel, October CMS, Bulma, Kube, React and Express.js
+            </p>
+        </div>
+    </section>
 </template>
 
 <script>
-import Nav from './Nav.vue'
 export default {
     name: 'About',
     props: {
         msg: String
     },
-      components: {
-        Nav
-    },
 }
 
-// ripple effect
-$(function() {
-    ripple()
 
-    function ripple() {
-        $(".rippleContainer").fadeIn(0)
-
-        $(".ripple").fadeIn(0).css({
-            "width": "300vw",
-            "height": "300vw",
-            "transform": "scale(2)"
-        }).fadeOut(400)
-
-        setTimeout( function() {
-            $(".rippleContainer").fadeOut(0);
-            $(".ripple").css({
-                "width": "10px",
-                "height": "10px",
-                "transform": "scale(1)"
-            })
-        }, 600)
-    }
-
-    $("nav").click(function(){ 
-        ripple();
-    });
-});
 
 
 $(document).ready(function() {
