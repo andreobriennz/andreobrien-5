@@ -1,56 +1,49 @@
 <template>
-    <div>
-        <Nav />
+    <section class="flex-grid space-between">
+        <div class="col-6 contactText">
+            <p>
+                <strong>Get in touch</strong><br><br>
 
-        <section class="flex-grid space-between">
-            <div class="col-6 contactText">
-                <p>
-                    <strong>Get in touch</strong><br><br>
+                Feel free to contact me with any questions or if you would like to chat further
+                <br><br>
+                You can also find out more about me through 
+                <a href="https://github.com/andreobriennz">GitHub</a> and 
+                <a href="https://www.linkedin.com/in/andreobriennz/">LinkedIn</a>
+                <span class="desktop-hide">, or simply send me an email below.</span>
+            </p>
+        </div>
 
-                    Feel free to contact me with any questions or if you would like to chat further
-                    <br><br>
-                    You can also find out more about me through 
-                    <a href="https://github.com/andreobriennz">GitHub</a> and 
-                    <a href="https://www.linkedin.com/in/andreobriennz/">LinkedIn</a>
-                    <span class="desktop-hide">, or simply send me an email below.</span>
-                </p>
-            </div>
+        <div class="col-6">
+            <form method="POST" action="/mail/send" class="form">
+                <div class="form-item">
+                    <label>Name</label>
+                    <input type="name" name="name">
+                </div>
 
-            <div class="col-6">
-                <form method="POST" action="/mail/send" class="form">
-                    <div class="form-item">
-                        <label>Name</label>
-                        <input type="name" name="name">
-                    </div>
+                <div class="form-item">
+                    <label>Email</label>
+                    <input type="email" name="email">
+                </div>
+            
+                <div class="form-item">
+                    <label>Message</label>
+                    <textarea name="memo" rows="8"></textarea>
+                </div>
+            
+                <div class="form-item">
+                    <button class="send">Send</button>
+                </div>
+            </form>
+        </div>
+    </section>
 
-                    <div class="form-item">
-                        <label>Email</label>
-                        <input type="email" name="email">
-                    </div>
-                
-                    <div class="form-item">
-                        <label>Message</label>
-                        <textarea name="memo" rows="8"></textarea>
-                    </div>
-                
-                    <div class="form-item">
-                        <button class="send">Send</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </div>
 </template>
 
 <script>
-import Nav from './Nav.vue'
 export default {
     name: 'HelloWorld',
     props: {
         msg: String
-    },
-    components: {
-        Nav
     },
 }
 </script>
@@ -116,12 +109,12 @@ textarea:focus,
 
 .send {
     font-weight: bold;
-    color: #1976D2;
+    /* color: #1976D2; */
     box-shadow: 0.05rem 0.15rem 0.3rem #444;
 }
 
 .send:hover {
-    color: #1976D2;
+    /* color: #1976D2; */
     margin-top: -1px;
 }
 </style>
