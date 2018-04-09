@@ -1,84 +1,76 @@
 <template>
-    <div>
-        <Nav />
+    <section style="padding-top: 4rem">
+        <nav class="tabs" data-component="tabs">
 
-        <section style="padding-top: 4rem">
-            <nav class="tabs" data-component="tabs">
+            <ul>
+                <li class="active">
+                    <a href="#all" style="color: #fff; border: #fff;">All</a>
+                </li>
+                <li>
+                    <a href="#javascript" style="color: #fff; border: #fff;">JavaScript</a>
+                </li>
+                <li>
+                    <a href="#php" style="color: #fff; border: #fff;">PHP</a>
+                </li>
+                <li>
+                    <a href="#sass" style="color: #fff; border: #fff;">CSS</a>
+                </li>
+                <li>
+                    <!-- <a href="#tools" style="color: #fff; border: #fff;">Tools</a> -->
+                </li>
+            </ul>
 
-                <ul>
-                    <li class="active">
-                        <a href="#all" style="color: #fff; border: #fff;">All</a>
-                    </li>
-                    <li>
-                        <a href="#javascript" style="color: #fff; border: #fff;">JavaScript</a>
-                    </li>
-                    <li>
-                        <a href="#php" style="color: #fff; border: #fff;">PHP</a>
-                    </li>
-                    <li>
-                        <a href="#sass" style="color: #fff; border: #fff;">CSS</a>
-                    </li>
-                    <li>
-                        <!-- <a href="#tools" style="color: #fff; border: #fff;">Tools</a> -->
-                    </li>
-                </ul>
+        </nav>
 
-            </nav>
-
-            <div class="projects flex-grid space-between">
-                <div class="text col-6">
-                    <p v-html="tagDescription"></p>
-                </div>
-
-                <a
-                    v-for="project in projectsArray"
-                    data-component="modal" 
-                    v-bind:data-target="'#'+project.id" 
-                    v-if="true"
-                    v-bind:href="'#'+project.id"
-                    target="_blank"
-                    class="col-6">
-
-                    <img class="workImage" 
-                        v-bind:src="project.image" 
-                        alt="">
-
-                    <div class="workDescription">
-                        <h2>...{{ project.title }}</h2>
-
-                        <p>...{{ project.description }}</p>
-                    </div>
-                </a>
-
+        <div class="projects flex-grid space-between">
+            <div class="text col-6">
+                <p v-html="tagDescription"></p>
             </div>
 
-            <div 
+            <a
                 v-for="project in projectsArray"
-                v-bind:id="project.id"
-                class="modal-box hide">
-                <div class="modal">
-                    <span class="close"></span>
-                    <div class="modal-header"><a v-bind:href="project.link" target="_blank">{{ project.title }}</a></div>
-                    <div class="modal-body">
-                        {{ project.description }}
-                        <br><br>
-                        <a v-bind:href="project.link" target="_blank" class="button">View Site</button></a>
-                    </div>
+                data-component="modal" 
+                v-bind:data-target="'#'+project.id" 
+                v-if="true"
+                v-bind:href="'#'+project.id"
+                target="_blank"
+                class="col-6">
+
+                <img class="workImage" 
+                    v-bind:src="project.image" 
+                    alt="">
+
+                <div class="workDescription">
+                    <h2>...{{ project.title }}</h2>
+
+                    <p>...{{ project.description }}</p>
+                </div>
+            </a>
+
+        </div>
+
+        <div 
+            v-for="project in projectsArray"
+            v-bind:id="project.id"
+            class="modal-box hide">
+            <div class="modal">
+                <span class="close"></span>
+                <div class="modal-header"><a v-bind:href="project.link" target="_blank">{{ project.title }}</a></div>
+                <div class="modal-body">
+                    {{ project.description }}
+                    <br><br>
+                    <a v-bind:href="project.link" target="_blank" class="button">View Site</button></a>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 </template>
 
 <script>
-import Nav from './Nav.vue'
 export default {
     name: 'Work',
     props: {
         msg: String
-    },
-    components: {
-        Nav
     },
     created: function () {
         let self = this;

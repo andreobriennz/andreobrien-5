@@ -1,26 +1,17 @@
 <template>
-    <div>
-        <Nav />
-
-        <section class="Home welcome">
-            <div>
-                <h1 v-html="h1"></h1>
-                <h2>{{ h2 }}</h2>
-            </div>
-        </section>
-    </div>
-
+    <section class="Home welcome">
+        <div>
+            <h1 v-html="h1"></h1>
+            <h2>{{ h2 }}</h2>
+        </div>
+    </section>
 </template>
 
 <script>
-import Nav from './Nav.vue'
 export default {
     name: 'Home',
     props: {
         msg: String
-    },
-    components: {
-        Nav
     },
     data: function () {
         return {
