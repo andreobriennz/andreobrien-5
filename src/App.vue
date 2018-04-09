@@ -1,21 +1,18 @@
 <template>
-    <div id="app">
-        <div id="app" v-bind:class="background">
+    <article id="app">
+        <div class="menuColour" v-bind:class="background">
+            <NavMenu />
 
             <router-view :class="page"></router-view>
-
-            <div class="rippleContainer">
-                <div class="ripple"></div>
-            </div>
         </div>
-    </div>
+    </article>
 </template>
 
 <script>
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Nav from './components/Nav.vue'
+import NavMenu from './components/NavMenu.vue'
 import Home from './components/Home.vue'
 import Work from './components/Work.vue'
 import About from './components/About.vue'
@@ -36,10 +33,14 @@ const router = new VueRouter({
 export default {
     name: 'app',
     router: router,
+    components: {
+        NavMenu
+    },
     data: function () {
         return {
             h1: 'Andre OBrien <strong>Web Developer</strong>',
-            mobileNav: false
+            mobileNav: false,
+            body: $('body')
         }
     },
     computed: {
@@ -47,6 +48,8 @@ export default {
           return this.$route.name
         },
         background: function () {
+            this.body.removeClass()
+            this.body.addClass(this.$route.name + 'Colour')
             return this.$route.name + 'Colour';
         }
     },
@@ -66,7 +69,11 @@ export default {
 
 body {
     -webkit-font-smoothing: antialiased;
-    background-color: #1976D2;
+    /* background-color: #1976D2; */
+}
+
+.menuColour {
+    transition: 1s;
 }
 
 a {
@@ -169,33 +176,6 @@ section {
     width: 100vw;
 }
 
-/* ripple */
-section {
-    height: 100vh;
-    width: 100vw;
-    transition: background 1s;
-}
-
-.ripple {
-    background: #eef;
-    opacity: 0.15;
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    transition: 0.66s;
-}
-
-.rippleContainer {
-    height: 100vh;
-    width: 100vw;
-    position:fixed;
-    top: 0;
-    left: 0;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .message {
     margin: 0;
 }
@@ -203,26 +183,5 @@ section {
 .message h5,
 .message p {
     color: #fafafa;
-}
-
-/* colors */
-.homeColour {
-    background-color: #2196F3;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 4 4'%3E%3Cpath fill='#1976D2' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-}
-
-.aboutColour {
-    background-color: #2196F3;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 4 4'%3E%3Cpath fill='#757575' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-}
-
-.workColour {
-    background-color: #1976D2;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 4 4'%3E%3Cpath fill='#2196F3' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-}
-
-.contactColour {
-    background-color: #1976D2;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 4 4'%3E%3Cpath fill='#BBDEFB' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 </style>
