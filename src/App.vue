@@ -56,7 +56,7 @@ export default {
     methods: {
         update: _.debounce(function (e) {
             this.input = e.target.value
-        }, 300)
+        }, 300),
     }
 }
 </script>
@@ -74,6 +74,10 @@ body {
 
 .menuColour {
     transition: 1s;
+}
+
+.close {
+    cursor: pointer;
 }
 
 a {
@@ -183,5 +187,16 @@ section {
 .message h5,
 .message p {
     color: #fafafa;
+}
+
+/* white background link */
+.link {
+    color: #fafafa;
+    text-decoration: underline;
+}
+.link:hover {
+    background-color: #fafafa;
+    color: #1976D2;
+    text-decoration: none;
 }
 </style>

@@ -54,7 +54,7 @@
             v-bind:id="project.id"
             class="modal-box hide">
             <div class="modal">
-                <span class="close"></span>
+                <span class="big close"></span>
                 <div class="modal-header"><a v-bind:href="project.link" target="_blank">{{ project.title }}</a></div>
                 <div class="modal-body">
                     {{ project.description }}
@@ -83,8 +83,8 @@ export default {
     computed: {
         tagDescription: function() {
             let description = []
-            description['all'] = 'A collection of my favourite projects.'
-            description['javascript'] = 'JavaScript is a language I use very freqently, including Vue, ES6 and sometimes TypeScript.'
+            description['all'] = `A collection of my favourite projects.`
+            description['javascript'] = `JavaScript is a language I use very freqently, including Vue, ES6 and sometimes TypeScript. Most project I have worked on have involved JavaScript to some extent, but the projects which are more JavaScript heavy will apear near the top. You can also view projects I have made in <a href="/work#react" class="link">React</a>, <a href="/work#vue" class="link">Vue</a> or <a href="/work#vanilla-js" class="link">Vanilla JS</a> specifically.`
             description['php'] = 'I have commercial experience developing with PHP. I tend to use Drupal for commerical projects and Laravel for personal projects.'
             description['sass'] = 'While nowadays I spend more time developing with JavaScript and PHP, I still enjoy developing with CSS and SASS and do so freqently. The following work shows some CSS / SASS projects I\'v worked on.'
             description['nodejs'] = ''
@@ -166,7 +166,7 @@ export default {
                         description: `
                             About once a year, as a personal project, I build an online game. The first time around, as part of a group project, I created the logic (JavaScript) for the game along with some of the design, CSS and backend development. The game was themed around robots vs humans, where users play cards to try and defeat the robots. 
 
-                            This time around, I'm building a completely new web app (based on Express.js and React). It's still very early days, but when the game is closer to development I'll provide a link to it. In the meantime try out the original, albeit poorly titled, game Dead Humanity and see if you enjoy it.`,
+                            This time around, I'm building a completely new web app (based on <strong>Express.js and React</strong>). It's still under development `,
                         image: 'https://cdn.andreobriennz.com/portfolio-v3/images/work/dh1610light.min.jpg',
                         alt: '',
                         link: 'https://dead-humanity-game.andreobriennz.com/',
@@ -178,7 +178,7 @@ export default {
                         title: 'Vario Theme',
                         id: 'vario-theme',
                         description: `I created this theme for October CMS. It is designed to be modern, lightweight, fast-loading and easily customizable. It includes a range of different components developers can use, as well as different font and colour options.`,
-                        image: 'https://cdn.andreobriennz.com/portfolio-v3/images/work/cm1610light.min.jpg',
+                        image: 'https://cdn.andreobriennz.com/portfolio-v3/images/work/vario1610light.min.jpg',
                         alt: '',
                         link: 'https://octobercms.com/theme/creativemonday-vario',
                         tags: 'all css sass',
@@ -189,7 +189,7 @@ export default {
                         title: 'Shelter of Hope',
                         id: 'shelter-of-hope',
                         description: '',
-                        image: '',
+                        image: 'https://cdn.andreobriennz.com/portfolio-v3/images/work/cm1610light.min.jpg',
                         alt: '',
                         link: '',
                         tags: '',

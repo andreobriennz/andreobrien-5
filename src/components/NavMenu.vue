@@ -1,6 +1,6 @@
 <template>
-
-        <nav class="nav NavMenu flex-grid vertal-align">
+    <span>
+        <nav @click="makeRipple" class="nav NavMenu flex-grid vertal-align">
             <div v-if="mobileNav = false" class="col-6 logo">
                 <router-link to="/"
                     v-if="page !=='home'"
@@ -29,45 +29,47 @@
             </div>
         </nav>
 
-
+        <div class="rippleContainer">
+            <div class="ripple"></div>
+        </div>
+    </span>
 </template>
 
 <script>
 export default {
-  name: 'NavMenu',
-  props: {
-    page: String
-  }
-}
+    name: 'NavMenu',
+    props: {
+        page: String
+    },
+    methods: {
+        update: _.debounce(function (e) {
+            this.input = e.target.value
+        }, 300),
 
-// ripple effect
-$(function() {
-    ripple()
+        makeRipple: function () {
+            $(".rippleContainer").fadeIn(0)
 
-    function ripple() {
-        $(".rippleContainer").fadeIn(0)
+            $(".ripple").fadeIn(0).css({
+                "width": "300vw",
+                "height": "300vw",
+                "transform": "scale(2)"
+            }).fadeOut(400)
 
-        $(".ripple").fadeIn(0).css({
-            "width": "300vw",
-            "height": "300vw",
-            "transform": "scale(2)"
-        }).fadeOut(400)
-
-        setTimeout( function() {
-            $(".rippleContainer").fadeOut(0);
-            $(".ripple").css({
-                "width": "10px",
-                "height": "10px",
-                "transform": "scale(1)"
-            })
-        }, 600)
+            setTimeout( function () {
+                $(".rippleContainer").fadeOut(0);
+                $(".ripple").css({
+                    "width": "10px",
+                    "height": "10px",
+                    "transform": "scale(1)"
+                })
+            }, 600)
+            return
+        }
+    },
+    mounted: function () {
+        this.makeRipple ()
     }
-
-    $("nav").click(function () {
-        console.log ('ripple') 
-        ripple();
-    });
-});
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

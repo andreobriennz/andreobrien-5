@@ -7,8 +7,8 @@
                 Feel free to contact me with any questions or if you would like to chat further
                 <br><br>
                 You can also find out more about me through 
-                <a href="https://github.com/andreobriennz">GitHub</a> and 
-                <a href="https://www.linkedin.com/in/andreobriennz/">LinkedIn</a>
+                <a href="https://github.com/andreobriennz" class="link">GitHub</a> and 
+                <a href="https://www.linkedin.com/in/andreobriennz/" class="link">LinkedIn</a>
                 <span class="desktop-hide">, or simply send me an email below.</span>
             </p>
         </div>
@@ -82,16 +82,6 @@ strong {
     font-weight: 700;
 }
 
-a {
-    color: #fafafa;
-    text-decoration: underline;
-}
-a:hover {
-    background-color: #fafafa;
-    color: #1976D2;
-    text-decoration: none;
-}
-
 /* skin */
 label {
     color: white;
@@ -104,17 +94,17 @@ textarea:hover,
 textarea:focus,
 .send:hover,
 .send:focus {
-    box-shadow: 0.15rem 0.3rem 1rem #555;
+    box-shadow: 0.1rem 0.2rem .5em #555;
 }
 
 .send {
     font-weight: bold;
     /* color: #1976D2; */
-    box-shadow: 0.05rem 0.15rem 0.3rem #444;
+    box-shadow: 0.05rem 0.1rem 0.2rem #444;
 }
 
 .send:hover {
     /* color: #1976D2; */
-    margin-top: -1px;
+    /* margin-top: -1px; */
 }
 </style>
