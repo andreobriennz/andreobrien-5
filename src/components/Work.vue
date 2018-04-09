@@ -1,22 +1,19 @@
 <template>
     <section style="padding-top: 4rem">
-        <nav class="tabs" data-component="tabs">
+        <nav class="tabs">
 
             <ul>
                 <li class="active">
-                    <a href="#all" style="color: #fff; border: #fff;">All</a>
+                    <a href="/work" style="color: #fff; border: #fff;">All</a>
                 </li>
                 <li>
-                    <a href="#javascript" style="color: #fff; border: #fff;">JavaScript</a>
+                    <a href="/work#javascript" style="color: #fff; border: #fff;">JavaScript</a>
                 </li>
                 <li>
-                    <a href="#php" style="color: #fff; border: #fff;">PHP</a>
+                    <a href="/work#php" style="color: #fff; border: #fff;">PHP</a>
                 </li>
                 <li>
-                    <a href="#sass" style="color: #fff; border: #fff;">CSS</a>
-                </li>
-                <li>
-                    <!-- <a href="#tools" style="color: #fff; border: #fff;">Tools</a> -->
+                    <a href="/work#sass" style="color: #fff; border: #fff;">CSS</a>
                 </li>
             </ul>
 
