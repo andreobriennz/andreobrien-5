@@ -16,7 +16,7 @@ export default {
     data: function () {
         return {
             h1: 'Andre OBrien <strong>Web Developer</strong>',
-            h2: 'JavaScript & PHP Development'
+            h2: 'Full-Stack Developer | JavaScript Specialist'
         }
     }
 }
