@@ -17,21 +17,21 @@
             <form method="POST" action="/mail/send" class="form">
                 <div class="form-item">
                     <label>Name</label>
-                    <input type="name" name="name">
+                    <input id="name" type="name" name="name">
                 </div>
 
                 <div class="form-item">
                     <label>Email</label>
-                    <input type="email" name="email">
+                    <input id="email" type="email" name="email">
                 </div>
             
                 <div class="form-item">
                     <label>Message</label>
-                    <textarea name="memo" rows="8"></textarea>
+                    <textarea id="textarea" name="memo" rows="8"></textarea>
                 </div>
             
                 <div class="form-item">
-                    <button class="send">Send</button>
+                    <button @click="send" class="send">Send</button>
                 </div>
             </form>
         </div>
@@ -41,10 +41,26 @@
 
 <script>
 export default {
-    name: 'HelloWorld',
+    name: 'Contact',
     props: {
         msg: String
     },
+    methods: {
+        send: function (event) {
+            if (event) event.preventDefault()
+
+            let params = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                // memo: document.getElementById('memo').value,
+            }
+            params = JSON.stringify (params)
+
+            $.post("http://localhost:5100/mail/send", params, function(result){
+                console.log ('result', result)
+            });
+        },
+    }
 }
 </script>
 
