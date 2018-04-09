@@ -63,6 +63,8 @@
 </template>
 
 <script>
+import {allProjects, tagDescriptions} from './../data/work'
+
 export default {
     name: 'Work',
     props: {
@@ -78,13 +80,7 @@ export default {
     },
     computed: {
         tagDescription: function() {
-            let description = []
-            description['all'] = `A collection of my favourite projects.`
-            description['javascript'] = `JavaScript is a language I use very freqently, including Vue, ES6 and sometimes TypeScript. Most project I have worked on have involved JavaScript to some extent, but the projects which are more JavaScript heavy will apear near the top. You can also view projects I have made in <a href="/work#react" class="link">React</a>, <a href="/work#vue" class="link">Vue</a> or <a href="/work#vanilla-js" class="link">Vanilla JS</a> specifically.`
-            description['php'] = 'I have commercial experience developing with PHP. I tend to use Drupal for commerical projects and Laravel for personal projects.'
-            description['sass'] = 'While nowadays I spend more time developing with JavaScript and PHP, I still enjoy developing with CSS and SASS and do so freqently. The following work shows some CSS / SASS projects I\'v worked on.'
-            description['nodejs'] = ''
-            description['tools'] = 'Over the past couple years I periodically built open-source tools. You can <a href="https://github.com/andreobriennz">view them on GitHub</a>.'
+            const description = tagDescriptions
 
             if (description[this.tag] !== undefined) {
                 return description[this.tag]
@@ -119,124 +115,7 @@ export default {
         return {
             tag: window.location.hash.substr(1) !== '' ? window.location.hash.substr(1) : 'all',
             projects: {
-                all: [
-                    {
-                        title: 'Andre OBrien - Portfolio',
-                        id: 'portfolio',
-                        description: `My portfolio is constantly updated. It\'s currently in it\'s fourth version, and has been changed to demonstate the technologies which I use most freqently and reflect my transition from writing mostly pure CSS and JavaScript, to working with JavaScript frameworks such as Vue, as well as various backend frameworks.`,
-                        image: 'https://cdn.andreobriennz.com/portfolio-v3/images/work/cm1610light.min.jpg',
-                        alt: '',
-                        link: 'https://andreobriennz.com',
-                        tags: 'all vue javascript es6 typescript',
-                        secondaryTags: 'php octobercms laravel',
-                        weight: 10
-                    },
-                    {
-                        title: 'Creative Monday',
-                        id: 'creative-monday',
-                        description: `
-                            Creative Monday required a website which was modern, responsive and very fast loading to fit with it's marketing. 
-                            
-                            To achieve the optimum level of performance, I built the website as a single page, where text and content is rendered by the server and then updated when a user clicks a link.`,
-                        image: 'https://cdn.andreobriennz.com/portfolio-v3/images/work/cm1610light.min.jpg',
-                        alt: '',
-                        link: 'https://creativemonday.co.nz',
-                        tags: 'all javascript animation octobercms',
-                        secondaryTags: 'php laravel',
-                        weight: 1
-                    },
-                    {
-                        title: 'rELEPHANT Editor',
-                        id: 'relephant-editor',
-                        description: `Earlier in the year I built an online note editor based on PHP and MySQL. However the project was mostly for my own learning, and focused more on programming than design. I'm now rebuilding the editor from the ground up, this time using SimpleMDE and Laravel (with AES-256-CBC encryption). Please note it is currently in alpha and some features are not yet finished.`,
-                        image: 'https://cdn.andreobriennz.com/portfolio-v3/images/work/relephant1610.min.jpg',
-                        alt: '',
-                        link: 'https://relephant.andreobriennz.com/',
-                        tags: 'all php laravel vue javascript',
-                        secondaryTags: '',
-                        weight: 2
-                    },
-                    {
-                        title: 'DH Game',
-                        id: 'dh-game',
-                        description: `
-                            About once a year, as a personal project, I build an online game. The first time around, as part of a group project, I created the logic (JavaScript) for the game along with some of the design, CSS and backend development. The game was themed around robots vs humans, where users play cards to try and defeat the robots. 
-
-                            This time around, I'm building a completely new web app (based on <strong>Express.js and React</strong>). It's still under development `,
-                        image: 'https://cdn.andreobriennz.com/portfolio-v3/images/work/dh1610light.min.jpg',
-                        alt: '',
-                        link: 'https://dead-humanity-game.andreobriennz.com/',
-                        tags: 'all javascript es6 php laravel',
-                        secondaryTags: '',
-                        weight: 3
-                    },
-                    {
-                        title: 'Vario Theme',
-                        id: 'vario-theme',
-                        description: `I created this theme for October CMS. It is designed to be modern, lightweight, fast-loading and easily customizable. It includes a range of different components developers can use, as well as different font and colour options.`,
-                        image: 'https://cdn.andreobriennz.com/portfolio-v3/images/work/vario1610light.min.jpg',
-                        alt: '',
-                        link: 'https://octobercms.com/theme/creativemonday-vario',
-                        tags: 'all css sass',
-                        secondaryTags: 'css octobercms laravel',
-                        weight: 4
-                    },
-                    {
-                        title: 'Shelter of Hope',
-                        id: 'shelter-of-hope',
-                        description: '',
-                        image: 'https://cdn.andreobriennz.com/portfolio-v3/images/work/cm1610light.min.jpg',
-                        alt: '',
-                        link: '',
-                        tags: '',
-                        secondaryTags: 'all css',
-                        weight: 1
-                    },
-                    {
-                        title: 'GO - Social Media for Board Game Geeks',
-                        id: 'GO',
-                        description: '',
-                        image: '',
-                        alt: '',
-                        link: '',
-                        tags: '',
-                        secondaryTags: '',
-                        weight: -1
-                    },
-                    {
-                        title: 'Vue, Laravel, Webpack & ES6 Starter Project',
-                        id: 'vue-laravel-webpack-starter',
-                        description: '',
-                        image: '',
-                        alt: '',
-                        link: '',
-                        tags: '',
-                        secondaryTags: '',
-                        weight: -1
-                    },
-                    {
-                        title: 'MongoDB, Express.js, Node, WebPack, EJS, TypeScript Starter Project',
-                        id: 'ME*N-starter',
-                        description: 'ME*N Project Setup, just add your chosen front-end framework',
-                        image: '',
-                        alt: '',
-                        link: '',
-                        tags: '',
-                        secondaryTags: '',
-                        weight: -1
-                    },
-                    {
-                        title: 'Skeleton-Flexbox',
-                        id: 'skeleton-flexbox',
-                        description: 'Fork of Skeleton Boilerplate With Flexbox Framework',
-                        image: '',
-                        alt: '',
-                        link: '',
-                        tags: '',
-                        secondaryTags: '',
-                        weight: -1
-                    }
-                ]
+                all: allProjects
             }
         }
     }
