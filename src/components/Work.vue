@@ -29,16 +29,15 @@
 
             <a
                 v-for="project in projectsArray"
-                data-component="modal" 
-                v-bind:data-target="'#'+project.id" 
+                class="col-6"
+                data-component="modal" :data-target="'#'+project.id" 
                 v-if="true"
-                v-bind:href="'#'+project.id"
-                target="_blank"
-                class="col-6">
+                :href="project.link" target="_blank"
+                :alt="project.alt">
 
-                <img class="workImage" 
-                    v-bind:src="project.image" 
-                    alt="">
+                <img class="workImage"
+                    :src="require('./../assets/images/'+project.image)"
+                    alt="Andre OBrien">
 
                 <div class="workDescription">
                     <h2>...{{ project.title }}</h2>

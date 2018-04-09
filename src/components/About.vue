@@ -2,7 +2,7 @@
     <section class="About flex-grid space-between">
         <div class="col-6">
             <img 
-                src="https://cdn.andreobriennz.com/portfolio-v3/images/andre-min.jpg" 
+                :src="require('./../assets/images/andre-min.jpg')"
                 alt=""
                 class="mobile-hide aboutImage">
         </div>
