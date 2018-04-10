@@ -56,7 +56,7 @@ export default {
             }
             params = JSON.stringify (params)
 
-            $.post("http://localhost:5100/mail/send", params, function(result){
+            $.post("localhost:5100/mail/send", params, function(result){
                 console.log ('result', result)
             });
         },
