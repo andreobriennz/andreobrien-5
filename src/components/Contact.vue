@@ -56,9 +56,37 @@ export default {
             }
             params = JSON.stringify (params)
 
+            $.ajaxSetup({
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'Access-Control-Allow-Origin': '*',
+                }
+            });
+
             $.post("https://api.andreobrien.me/mail/send", params, function(result){
                 console.log ('result', result)
             });
+
+            $.ajax({
+                type: "POST",
+                url: "https://api.andreobrien.me/mail/send",
+                data: params,
+                // success: console.log ('result', result),
+                crossDomain: true,
+                    xhrFields: {
+                    withCredentials: true
+                },
+                success: function (response) {
+                    var resp = JSON.parse(response)
+                    alert(resp.status)
+                },
+                error: function (xhr, status) {
+                    alert("error")
+                    console.log (xhr)
+                    console.log (status)
+                },
+            })
         },
     }
 }
