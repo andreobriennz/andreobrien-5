@@ -21,7 +21,7 @@ import Contact from './components/Contact.vue'
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-    mode: 'history',
+    // mode: 'history',
     routes: [
       { path: '/', component: Home, name: 'home', props: true },
       { path: '/work', component: Work, name: 'work', props: true },
