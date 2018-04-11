@@ -53,7 +53,7 @@
                 <span class="big close"></span>
                 <div class="modal-header"><a v-bind:href="project.link" target="_blank">{{ project.title }}</a></div>
                 <div class="modal-body">
-                    {{ project.description }}
+                    <span v-html="project.description"></span>
                     <br><br>
                     <a v-bind:href="project.link" target="_blank" class="button">View Site</button></a>
                 </div>
