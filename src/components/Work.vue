@@ -128,6 +128,15 @@ export default {
     height: auto;
 }
 
+.workImage {
+    transition: .2s;
+    box-shadow: .25rem 0.25rem .5rem #555;
+}
+.workImage:hover {
+    transform: scale(1.015);
+    box-shadow: .25rem 0.25rem 1rem #444;
+}
+
 .tabs ul {
     border-color: #fafafa;
     font-weight: bold;
