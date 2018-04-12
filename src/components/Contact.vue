@@ -134,6 +134,7 @@ input,
 textarea,
 .send {
     box-shadow: .25rem 0.25rem .5rem #555;
+    transition: .25s;
 }
 
 input:hover,
