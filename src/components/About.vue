@@ -9,12 +9,15 @@
 
         <div class="col-6 aboutText">
             <p>
-                <strong>About me</strong><br><br>
-                I'm a web developer with experience working on over twenty projects. 
-                I enjoy creating complex layouts usings CSS, building dynamic websites and web apps with JavaScript, and using PHP and MySQL on the server. 
-                Of these, I consider JavaScript to be my greatest strength.
+                <strong class="h3">About me</strong><br><br>
+
+                I am a developer with experience on dozens of web apps and websites. 
+                I am currently looking to secure a position where I can use my skills to bring immediate value and also develop my skillset further.
                 <br><br>
-                Some of my favourite tools include VueJS, Laravel, October CMS, Bulma, Kube, React and Express.js
+                As a full-stack web developer I have experience using HTML, CSS, JavaScript, PHP, NodeJS, MySQL, cloud hosting and more.
+                Of these, I consider JavaScript (including React, Vue and vanilla JavaScript) to be my strongest language, followed by PHP. 
+                <br><br>
+                <!-- Some of my favourite tools include VueJS, Laravel, October CMS, Bulma, Kube, React and Express.js -->
             </p>
         </div>
     </section>
