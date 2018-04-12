@@ -134,8 +134,12 @@ export default {
     border-radius: .15rem;
 }
 .workImage:hover {
-    transform: scale(1.015);
-    box-shadow: .25rem 0.25rem 1rem #444;
+    box-shadow: .25rem 0.25rem 1.5rem #444;
+}
+@media only screen and (min-width: 1024px) {
+    .workImage:hover {
+        transform: scale(1.015);
+    }
 }
 
 .tabs ul {
