@@ -130,19 +130,28 @@ label {
     font-weight: bold;
 }
 
+input,
+textarea,
+.send {
+    box-shadow: .25rem 0.25rem .5rem #555;
+}
+
 input:hover,
-input:focus,
 textarea:hover,
+.send:hover {
+    box-shadow: .25rem 0.25rem 1rem #444;
+}
+
+input:focus,
 textarea:focus,
-.send:hover,
 .send:focus {
-    box-shadow: 0.1rem 0.2rem .5em #555;
+    box-shadow: .25rem 0.25rem 1rem #333;
 }
 
 .send {
     font-weight: bold;
+    box-shadow: 0 0 0 #000;
     /* color: #1976D2; */
-    box-shadow: 0.05rem 0.1rem 0.2rem #444;
 }
 
 .send:hover {
