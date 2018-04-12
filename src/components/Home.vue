@@ -32,27 +32,22 @@ export default {
     text-align: center;
 }
 
-.welcome h1 {
-    font-size: 3rem;
-    padding: 0;
-}
-
 h1,
 h2 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
+    /* margin-top: 0;
+    margin-bottom: 0.5rem; */
 }
 
 /* $tablet-plus */
 @media only screen and (min-width: 768px) {
     h1,
     h2 {
-        padding: 1rem 0 0 3rem;
+        /* padding: 1rem 0 0 3rem; */
     }
 }
 
 h2 {
-    font-size: 1.25rem;
+    font-size: 20px;
 }
 
 p {
