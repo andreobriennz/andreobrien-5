@@ -129,8 +129,9 @@ export default {
 }
 
 .workImage {
-    transition: .2s;
+    transition: .25s;
     box-shadow: .25rem 0.25rem .5rem #555;
+    border-radius: .15rem;
 }
 .workImage:hover {
     transform: scale(1.015);
