@@ -62,6 +62,9 @@ export default {
 </script>
 
 <style>
+.h3 {
+    font-size: 48px;
+}
 /* BLOILERPLATE */
 * {
     font-family: 'Open Sans', sans-serif;
