@@ -1,6 +1,6 @@
 {
   "name": "andreobrien-5",
-  "version": "5.0.0-alpha.1",
+  "version": "5.0.0-alpha.2",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --open",
