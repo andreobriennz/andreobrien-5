@@ -68,11 +68,9 @@ p {
     display: flex;
     align-items: center;
     font-weight: 600;
-    font-size: 1.1rem;
 }
 
 .aboutText strong {
-    font-size: 1.5rem;
     font-weight: 700;
 }
 </style>
