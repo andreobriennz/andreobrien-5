@@ -27,7 +27,7 @@
             
                 <div class="form-item">
                     <label>Message</label>
-                    <textarea id="textarea" name="memo" rows="8"></textarea>
+                    <textarea id="memo" name="memo" rows="8"></textarea>
                 </div>
             
                 <div class="form-item">
@@ -52,7 +52,7 @@ export default {
             let params = {
                 name: document.getElementById('name').value,
                 email: document.getElementById('email').value,
-                // memo: document.getElementById('memo').value,
+                memo: document.getElementById('memo').value,
             }
             params = JSON.stringify (params)
 
