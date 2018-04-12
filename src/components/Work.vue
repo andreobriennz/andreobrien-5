@@ -46,15 +46,15 @@
 
         <div 
             v-for="project in projectsArray"
-            v-bind:id="project.id"
+            :id="project.id"
             class="modal-box hide">
             <div class="modal">
                 <span class="big close"></span>
-                <div class="modal-header"><a v-bind:href="project.link" target="_blank">{{ project.title }}</a></div>
+                <div class="modal-header"><a :href="project.link" target="_blank">{{ project.title }}</a></div>
                 <div class="modal-body">
                     <span v-html="project.description"></span>
                     <br><br>
-                    <a v-bind:href="project.link" target="_blank" class="button">View Site</a>
+                    <a :href="project.link" target="_blank" class="button">View Site</a>
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 <template>
     <article id="app">
-        <div class="menuColour" v-bind:class="background">
+        <div class="menuColour" :class="background">
             <NavMenu />
 
             <router-view :class="page"></router-view>
