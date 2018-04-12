@@ -42,7 +42,6 @@
                     <p>...{{ project.description }}</p>
                 </div>
             </a>
-
         </div>
 
         <div 
@@ -55,7 +54,7 @@
                 <div class="modal-body">
                     <span v-html="project.description"></span>
                     <br><br>
-                    <a v-bind:href="project.link" target="_blank" class="button">View Site</button></a>
+                    <a v-bind:href="project.link" target="_blank" class="button">View Site</a>
                 </div>
             </div>
         </div>
