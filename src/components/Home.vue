@@ -1,7 +1,7 @@
 <template>
     <section class="Home welcome">
         <div>
-            <h1 v-html="h1"></h1>
+            <h1 class="title" v-html="h1"></h1>
             <h2>{{ h2 }}</h2>
         </div>
     </section>
