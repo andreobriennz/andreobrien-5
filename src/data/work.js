@@ -49,7 +49,7 @@ const allProjects = [
         image: 'work/dh1610light.min.jpg',
         alt: 'Showing the online card game called Dead Humanity',
         link: 'https://dead-humanity-game.andreobriennz.com/',
-        tags: 'all javascript vanilla-js es6 php laravel',
+        tags: 'all javascript vanilla-js react es6 php laravel',
         secondaryTags: '',
         weight: 400
     },
