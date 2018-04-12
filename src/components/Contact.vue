@@ -2,7 +2,7 @@
     <section class="flex-grid space-between">
         <div class="col-6 contactText">
             <p>
-                <strong>Get in touch</strong><br><br>
+                <strong class="h3">Get in touch</strong><br><br>
 
                 Feel free to contact me with any questions or if you would like to chat further
                 <br><br>
@@ -118,11 +118,9 @@ form {
     display: flex;
     align-items: center;
     font-weight: 600;
-    font-size: 1.1rem;
 }
 
 strong {
-    font-size: 1.5rem;
     font-weight: 700;
 }
 
