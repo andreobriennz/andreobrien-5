@@ -21,7 +21,7 @@
 
         <div class="projects flex-grid space-between">
             <div class="text col-6">
-                <p v-html="tagDescription"></p>
+                <p class="big" v-html="tagDescription"></p>
             </div>
 
             <a
@@ -130,6 +130,7 @@ export default {
 
 .tabs ul {
     border-color: #fafafa;
+    font-weight: bold;
 }
 
 .tabs li:first-of-type {
@@ -152,11 +153,11 @@ export default {
 }
 
 a img {
-    width: 100%;
+    /* width: 100%; */
 }
 a p {
-    margin: 0;
-    padding: 1rem;
+    /* margin: 0; */
+    /* padding: 1rem; */
 }
 
 a .workDescription {
