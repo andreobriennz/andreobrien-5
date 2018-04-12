@@ -84,8 +84,13 @@ export default {
 }
 
 a {
+    color: #fafafa !important;
     padding: 2rem;
     padding-bottom: 1.25rem;
+}
+
+a h2 {
+    color: #fafafa !important;
 }
 @media only screen and (min-width: 1024px) {
     a:last-of-type {
@@ -96,7 +101,7 @@ a {
 .logo {
     text-align: left;
     padding: 0 0 0 4rem;
-    font-size: 1.5rem;
+    font-size: 20px;
 }
 
 .menu div {
@@ -121,6 +126,7 @@ a.active {
 /* hamburger */
 .hamburger {
     padding: 1rem;
+    color: #fafafa;
 }
   
 .hamburger .line{
@@ -159,15 +165,16 @@ transform: translateY(-13px);
 
 
     .menu-items {
-        padding-top: 4rem;
+        padding: 24px 0;
         height: 100vh;
         width: 100vw;
         text-align: center;
         font-weight: bold;
-        font-size: 2.5rem;
+        font-size: 48px;
         border: none;
-        background-color: #2278CF;
-        box-shadow: 0rem 0rem 1rem #555;
+        /* background-color: #2278CF; */
+        background-color: #112;
+        box-shadow: 0rem 0rem 2rem #444;
     }
 
     .menu-items.mobile-hide {
@@ -180,6 +187,8 @@ transform: translateY(-13px);
 
     a {
         display: block;
+        color: #4f4f5f !important;
+        padding: 36px 0;
     }
 }
 
