@@ -34,7 +34,7 @@
 
                 <img class="workImage"
                     :src="require('./../assets/images/'+project.image)"
-                    alt="Andre OBrien">
+                    :alt="project.alt">
 
                 <div class="workDescription">
                     <h2>...{{ project.title }}</h2>
