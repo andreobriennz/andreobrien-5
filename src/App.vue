@@ -68,6 +68,12 @@ export default {
 </script>
 
 <style>
+/* @font-face {
+    font-family: 'Open Sans';
+    src:  url('./assets/fonts/Open_Sans/OpenSans-bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+} */
 .h3 {
     font-size: 48px;
 }
