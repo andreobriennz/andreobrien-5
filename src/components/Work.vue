@@ -63,6 +63,7 @@
 
 <script>
 import {allProjects, tagDescriptions} from './../data/work'
+import 'imperavi-kube'
 
 export default {
     name: 'Work',

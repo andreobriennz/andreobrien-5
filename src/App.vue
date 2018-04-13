@@ -12,6 +12,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+// import $ from 'jquery'
+// import jQuery from 'jquery'
+
+import 'imperavi-kube'
+import 'imperavi-kube/dist/js/kube.js'
+
 import NavMenu from './components/NavMenu.vue'
 import Home from './components/Home.vue'
 import Work from './components/Work.vue'
