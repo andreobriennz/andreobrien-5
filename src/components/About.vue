@@ -26,21 +26,15 @@
 <script>
 export default {
     name: 'About',
-    props: {
-        msg: String
-    },
-}
-
-
-
+};
 
 $(document).ready(function() {
     $('.nav').click(function() {
-        $(this).toggleClass('is-active')
+        $(this).toggleClass('is-active');
 
-        $('.menu-items').toggleClass('mobile-hide')
+        $('.menu-items').toggleClass('mobile-hide');
 
-        app.mobileNav != app.mobileNav
+        app.mobileNav != app.mobileNav;
     });
 });
 </script>
