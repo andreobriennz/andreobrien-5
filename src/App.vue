@@ -74,7 +74,7 @@ export default {
     font-weight: 700;
     font-style: normal;
 } */
-.h3 {
+.heading-3 {
     font-size: 48px;
 }
 /* BLOILERPLATE */

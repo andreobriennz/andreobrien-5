@@ -127,6 +127,7 @@ export default {
 /* layout */
 .work {
     height: auto;
+    margin-bottom: .25rem;
 }
 
 .workImage {

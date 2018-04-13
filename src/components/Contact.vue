@@ -2,7 +2,7 @@
     <section class="flex-grid space-between">
         <div class="col-6 contactText">
             <p>
-                <strong class="h3">Get in touch</strong><br><br>
+                <strong class="heading-3">Get in touch</strong><br><br>
 
                 Feel free to contact me with any questions or if you would like to chat further
                 <br><br>

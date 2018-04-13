@@ -9,7 +9,7 @@
 
         <div class="col-6 aboutText">
             <p>
-                <strong class="h3">About me</strong><br><br>
+                <strong class="heading-3">About me</strong><br><br>
 
                 I am a developer with experience on dozens of web apps and websites. 
                 I am currently looking to secure a position where I can use my skills to bring immediate value and also develop my skillset further.
