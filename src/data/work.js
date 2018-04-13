@@ -45,7 +45,7 @@ const allProjects = [
         description: `
             About once a year, as a personal project, I build an online game. The first time around, as part of a group project, I created the logic (JavaScript) for the game along with some of the design, CSS and backend development. The game was themed around robots vs humans, where users play cards to try and defeat the robots. 
 
-            This time around, I'm building a completely new web app (based on <strong>Express.js and React</strong>). It's still under development `,
+            This time around, I'm building a completely new web app (based on <strong>Express.js and React</strong>). It's still under development but I can provide a demo upon request, or you can view the project on <a href="https://github.com/andreobriennz/29">GitHub</a>`,
         image: 'work/dh1610light.min.jpg',
         alt: 'Showing the online card game called Dead Humanity',
         link: 'https://dead-humanity-game.andreobriennz.com/',
