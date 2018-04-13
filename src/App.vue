@@ -140,8 +140,8 @@ a:hover {
 
 .col-6,
 .flex-col-6 {
-    /* width: 48%; */
-    width: calc(50% - 0.5rem);
+    width: 49.5%;
+    width: calc(50% - 0.5rem) !important;
     margin: 0.25rem 0;
 }
 
