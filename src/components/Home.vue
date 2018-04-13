@@ -1,8 +1,8 @@
 <template>
     <section class="Home welcome">
         <div>
-            <h1 class="title" v-html="h1"></h1>
-            <h2>{{ h2 }}</h2>
+            <h1 class="title">Andre OBrien <strong>Web Developer</strong></h1>
+            <h2>Full-Stack Developer | JavaScript Specialist</h2>
         </div>
     </section>
 </template>
@@ -10,15 +10,15 @@
 <script>
 export default {
     name: 'Home',
-    props: {
-        msg: String
-    },
-    data: function () {
-        return {
-            h1: 'Andre OBrien <strong>Web Developer</strong>',
-            h2: 'Full-Stack Developer | JavaScript Specialist'
-        }
-    }
+    // props: {
+    //     msg: String
+    // },
+    // data: function () {
+    //     return {
+    //         h1: 'Andre OBrien <strong>Web Developer</strong>',
+    //         h2: 'Full-Stack Developer | JavaScript Specialist'
+    //     }
+    // }
 }
 </script>
 
