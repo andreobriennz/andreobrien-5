@@ -54,6 +54,12 @@ export default {
                 email: document.getElementById('email').value,
                 memo: document.getElementById('memo').value,
             }
+
+            if (params.name.length < 1 || params.email.length < 5 || params.memo.length < 5) {
+                alert ('Please complete all fields')
+                return
+            }
+
             params = JSON.stringify (params)
 
             $.ajaxSetup({
