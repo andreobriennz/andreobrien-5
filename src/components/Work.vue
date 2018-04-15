@@ -54,7 +54,7 @@
                 <div class="modal-body">
                     <span v-html="project.description"></span>
                     <br><br>
-                    <a :href="project.link" target="_blank" class="button">View Site</a>
+                    <a v-if="project.link !== ''" :href="project.link" target="_blank" class="button">View Site</a>
                 </div>
             </div>
         </div>
