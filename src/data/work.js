@@ -94,15 +94,20 @@ const allProjects = [
         weight: 300
     },
     {
-        title: 'GO - Social Media for Board Game Geeks',
-        id: 'GO',
-        description: '',
-        image: 'work/cm1610light.min.jpg',
-        alt: '',
+        title: 'Testing the Zagga Platform',
+        id: 'zagga',
+        description: `
+            While at Communica I created tests for many forms on Zagga's website.
+            The tests were created using Cypress, a modern and popular JavaScript testing framework. 
+            I also developed tests for NZ Doctor and Pharmacy Today, 
+            including testing forms, functionality and responsiveness.
+        `,
+        image: 'work/zagga.jpg',
+        alt: 'A form on Zagga\'s website',
         link: '',
-        tags: '',
+        tags: 'all testing javascript',
         secondaryTags: '',
-        weight: -1
+        weight: 200
     },
 ]
 
