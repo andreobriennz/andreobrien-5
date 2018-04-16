@@ -3,15 +3,16 @@ const allProjects = [
         title: 'Andre OBrien - Portfolio',
         id: 'portfolio',
         description: `
-            My portfolio is constantly updated. 
-            It's currently in version 5 after I redesigned it in Vue and ExpressJS, 
-            and has been changed to demonstate the technologies which I use most freqently and reflect my transition from writing mostly pure CSS and JavaScript, 
-            to working with JavaScript frameworks such as Vue, as well as various backend frameworks.`,
+            I recently redesigned my portfolio.
+            The current version is developed with <strong>Vue and ExpressJS</strong>, 
+            whereas previous versions were built with Laravel and pure JavaScript / jQuery.
+            <br><br>
+            For this version I also began using Digital Ocean cloud hosting in an Ubuntu / Nginx enviroment.`,
         image: 'work/andreobrien-5.jpg',
         alt: 'Photo of my portfolio',
         link: 'https://andreobrien.me',
         tags: 'all vue javascript es6',
-        secondaryTags: 'php octobercms laravel',
+        secondaryTags: 'expressjs',
         weight: 100
     },
     {
@@ -113,7 +114,7 @@ const allProjects = [
 
 let tagDescriptions = []
 tagDescriptions['all'] = `A collection of my favourite projects.`
-tagDescriptions['javascript'] = `JavaScript is a language I use very freqently, including React, Vue, ES6 and sometimes TypeScript. You can also view projects I have made in <a href="/work#react" class="link">React</a>, <a href="/work#vue" class="link">Vue</a> or <a href="/work#vanilla-js" class="link">Vanilla JS</a> specifically.`
+tagDescriptions['javascript'] = `JavaScript is a language I use very freqently, including React, Vue, Cypress ES6 and sometimes TypeScript. You can also view projects I have made in <a href="/work#react" class="link">React</a>, <a href="/work#vue" class="link">Vue</a> or <a href="/work#vanilla-js" class="link">Vanilla JS</a> specifically.`
 tagDescriptions['php'] = 'I have commercial experience developing with PHP. I tend to use Drupal for commerical projects and Laravel for personal projects.'
 tagDescriptions['sass'] = 'While nowadays I spend more time developing with JavaScript and PHP, I still enjoy developing with CSS and SASS and do so freqently. The following work shows some CSS / SASS projects I\'v worked on.'
 tagDescriptions['nodejs'] = ''
