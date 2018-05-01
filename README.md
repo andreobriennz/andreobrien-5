@@ -2,7 +2,7 @@
 
 Version history:
 - Version 1: Built with pure HTML, CSS and jQuery animations.
-- Version 1.1: Updated design, started using Vue in the work section, and added some added new work.
+- Version 1.1: Started using Vue in the work section, and added some added new work.
 - Version 2: Mostly the same design, but built with OctoberCMS (a CMS based on Laravel).
 - Version 3: Full redesign (except for panoramic header image) and removing OctoberCMS to be just built on Laravel. 
 - Version 4: Full redesign as single page app, developed with VueJS. 
