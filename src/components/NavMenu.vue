@@ -24,6 +24,7 @@
                         <router-link to="/work" :class="{ active: page === 'work' }">Work</router-link>
                         <router-link to="/about" :class="{ active: page === 'about' }">About</router-link>
                         <router-link to="/contact" :class="{ active: page === 'contact' }">Contact</router-link>
+                        <a href="https://blog.andreobriennz.com">Blog</a>
                     </div>
                 </div>
             </div>
