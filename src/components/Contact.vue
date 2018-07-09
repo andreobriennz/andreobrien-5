@@ -17,7 +17,7 @@
             <form method="POST" action="/mail/send" class="form">
                 <div class="form-item">
                     <label>Name</label>
-                    <input id="name" type="name" name="name">
+                    <input id="name" type="text" name="name">
                 </div>
 
                 <div class="form-item">
