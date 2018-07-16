@@ -21,6 +21,7 @@ import 'imperavi-kube/dist/js/kube.js'
 import NavMenu from './components/NavMenu.vue'
 import Home from './components/Home.vue'
 import Work from './components/Work.vue'
+import OpenSource from './components/OpenSource.vue'
 import About from './components/About.vue'
 import Contact from './components/Contact.vue'
 
@@ -31,6 +32,7 @@ const router = new VueRouter({
     routes: [
       { path: '/', component: Home, name: 'home', props: true },
       { path: '/work', component: Work, name: 'work', props: true },
+      { path: '/open-source', component: OpenSource, name: 'open-source', props: true },
       { path: '/about', component: About, name: 'about', props: true },
       { path: '/contact', component: Contact, name: 'contact', props: true }
     ]
@@ -227,6 +229,11 @@ section {
 }
 
 .workColour {
+    background-color: #1976D2;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 4 4'%3E%3Cpath fill='#2196F3' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.open-sourceColour {
     background-color: #1976D2;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 4 4'%3E%3Cpath fill='#2196F3' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
