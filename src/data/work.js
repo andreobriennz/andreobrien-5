@@ -160,6 +160,6 @@ tagDescriptions['vanilla-js'] = `
 
 tagDescriptions['php'] = 'I have commercial experience developing with PHP. I tend to use Drupal for commerical projects and Laravel for personal projects.'
 
-tagDescriptions['tools'] = 'Over the past couple years I periodically built open-source tools. You can <a href="https://github.com/andreobriennz">view them on GitHub</a>.'
+tagDescriptions['tools'] = 'Over the past couple years I periodically built open source tools. You can <a href="https://github.com/andreobriennz">view them on GitHub</a>.'
 
 export {allProjects, tagDescriptions}
