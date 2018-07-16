@@ -7,7 +7,7 @@ const allProjects = [
             The current version is developed with <strong>Vue and ExpressJS</strong>, 
             whereas previous versions were built with Laravel and pure JavaScript / jQuery.
             <br><br>
-            For this version I also began using Digital Ocean cloud hosting in an Ubuntu / Nginx enviroment.`,
+            For this version, I also began using Digital Ocean cloud hosting in an Ubuntu / Nginx environment.`,
         image: 'work/andreobrien-5.jpg',
         alt: 'Photo of my portfolio',
         link: 'https://andreobrien.me',
@@ -21,7 +21,7 @@ const allProjects = [
         description: `
             Creative Monday required a website which was modern, responsive and very fast loading to fit with it's marketing. 
             
-            To achieve the optimum level of performance, I built the website as a single page, where text and content is rendered by the server and then updated when a user clicks a link.`,
+            To achieve the optimum level of performance, I built the website as a single page, where text and content are rendered by the server and then updated when a user clicks a link.`,
         image: 'work/cm1610light.min.jpg',
         alt: 'Photo of Creative Monday website',
         link: 'https://creativemonday.co.nz',
@@ -32,7 +32,7 @@ const allProjects = [
     {
         title: 'rELEPHANT Editor',
         id: 'relephant-editor',
-        description: `Earlier in the year I built an online note editor based on PHP and MySQL. However the project was mostly for my own learning, and focused more on programming than design. I'm now rebuilding the editor from the ground up, this time using SimpleMDE and Laravel (with AES-256-CBC encryption). Please note it is currently in alpha and some features are not yet finished.`,
+        description: `Earlier in the year, I built an online note editor based on PHP and MySQL. However, the project was mostly for my own learning and focused more on programming than design. I'm now rebuilding the editor from the ground up, this time using SimpleMDE and Laravel (with AES-256-CBC encryption). Please note it is currently in alpha and some features are not yet finished.`,
         image: 'work/relephant1610.min.jpg',
         alt: 'Photo of rELEPHANT editor, showing different screens such as a list of notes and a page to edit the notes',
         link: 'https://relephant.andreobriennz.com/',
@@ -65,54 +65,54 @@ const allProjects = [
         secondaryTags: 'css octobercms laravel',
         weight: 600
     },
-    {
-        title: 'GitHub Projects',
-        id: 'github',
-        description: `
-            I have developed a few libraries and tools which I published on GitHub. Some of the most notable one are:
+    // {
+    //     title: 'GitHub Projects',
+    //     id: 'github',
+    //     description: `
+    //         I have developed a few libraries and tools which I published on GitHub. Some of the most notable one are:
             
-            <br /><br />
+    //         <br /><br />
 
-            <h3><a href="https://github.com/andreobriennz/skeleton-flexbox">skeleton-flexbox</a></h3>
-            <p>
-                The Skeleton CSS boilerplate remains a popular boilerplate, despite the fact it hasn't been updated in the last 4 years. 
-                This means that developers are forced to develop with its outdated grid system, rather than using flexbox.
-                When I first developed skeleton-flexbox about a year ago I replaced the original grid system with my own custom flexbox grid. 
-                However, I more recently I discovered flexbox-grid by kristoferjoseph and was very impressed with it. 
-                Version 3 of skeleton-flexbox therefore switches to using his framework. 
-                It also splits the Skeleton project into seperate SCSS files and adds some additional improvements<br />
-                skeleton-flexbox is available on both <a href="https://github.com/andreobriennz/skeleton-flexbox">GitHub</a> and <a href="https://www.npmjs.com/package/skeleton-flexbox">NPM</a>. 
-                It also has its own <a href="https://andreobriennz.github.io/skeleton-flexbox/">demo site.</a>
-            </p>
+    //         <h3><a href="https://github.com/andreobriennz/skeleton-flexbox">skeleton-flexbox</a></h3>
+    //         <p>
+    //             The Skeleton CSS boilerplate remains a popular boilerplate, despite the fact it hasn't been updated in the last 4 years. 
+    //             This means that developers are forced to develop with its outdated grid system, rather than using flexbox.
+    //             When I first developed skeleton-flexbox about a year ago I replaced the original grid system with my own custom flexbox grid. 
+    //             However, I more recently I discovered flexbox-grid by kristoferjoseph and was very impressed with it. 
+    //             Version 3 of skeleton-flexbox therefore switches to using his framework. 
+    //             It also splits the Skeleton project into seperate SCSS files and adds some additional improvements<br />
+    //             skeleton-flexbox is available on both <a href="https://github.com/andreobriennz/skeleton-flexbox">GitHub</a> and <a href="https://www.npmjs.com/package/skeleton-flexbox">NPM</a>. 
+    //             It also has its own <a href="https://andreobriennz.github.io/skeleton-flexbox/">demo site.</a>
+    //         </p>
 
-            <h3><a href="https://github.com/andreobriennz/kube-flexbox">kube-flexbox</a></h3>
-            <p>
-                Kube is a lesser known, but very nice CSS/SASS framework that offers a great design with less bloat than bootstrap.
-                kube-flexbox is a project very similar to skeleton-flexbox (mentioned above), 
-                but in this case updating the Kube framework to work with flexbox. 
-                <a href="https://github.com/andreobriennz/kube-flexbox">View it here</a>
-            </p>
+    //         <h3><a href="https://github.com/andreobriennz/kube-flexbox">kube-flexbox</a></h3>
+    //         <p>
+    //             Kube is a lesser known, but very nice CSS/SASS framework that offers a great design with less bloat than bootstrap.
+    //             kube-flexbox is a project very similar to skeleton-flexbox (mentioned above), 
+    //             but in this case updating the Kube framework to work with flexbox. 
+    //             <a href="https://github.com/andreobriennz/kube-flexbox">View it here</a>
+    //         </p>
 
-            <h3><a href="https://github.com/andreobriennz/Vivace-2">Vivace 2</a></h3>
-            <p>
-                Vivace 2 combined 2 previous tools I developed: 
-                one tool acts as a templating language allowing JavaScript and PHP together isomorphically, 
-                the other (Vario) is a JavaScript library which acts as a more lightweight alternative to jQuery.
-                I am currently developing a newer version of this tool which makes better use of ES2015 syntax.
-                <a href="https://github.com/andreobriennz/Vivace-2">a tool for using JavaScript and PHP together isomorphically</a> and
-            </p>
-            `,
-        image: 'work/github.jpg',
-        alt: 'Showing a project from my GitHub page',
-        link: 'https://github.com/andreobriennz',
-        tags: 'all css javascript vanilla-js',
-        secondaryTags: '',
-        weight: 10
-    },
+    //         <h3><a href="https://github.com/andreobriennz/Vivace-2">Vivace 2</a></h3>
+    //         <p>
+    //             Vivace 2 combined 2 previous tools I developed: 
+    //             one tool acts as a templating language allowing JavaScript and PHP together isomorphically, 
+    //             the other (Vario) is a JavaScript library which acts as a more lightweight alternative to jQuery.
+    //             I am currently developing a newer version of this tool which makes better use of ES2015 syntax.
+    //             <a href="https://github.com/andreobriennz/Vivace-2">a tool for using JavaScript and PHP together isomorphically</a> and
+    //         </p>
+    //         `,
+    //     image: 'work/github.jpg',
+    //     alt: 'Showing a project from my GitHub page',
+    //     link: 'https://github.com/andreobriennz',
+    //     tags: 'all css javascript vanilla-js',
+    //     secondaryTags: '',
+    //     weight: 10
+    // },
     {
         title: 'Shelter of Hope',
         id: 'shelter-of-hope',
-        description: 'This website was created for a client who runs a charity',
+        description: 'This website was created for a client who runs a charity.',
         image: 'work/shelter.jpg',
         alt: 'The website for Shelter of Hope',
         link: 'https://theshelterofhope.org/',
@@ -127,7 +127,7 @@ const allProjects = [
             While at Communica I created tests for many forms on Zagga's website.
             The tests were created using Cypress, a modern and popular JavaScript testing framework. 
             I also developed tests for NZ Doctor and Pharmacy Today, 
-            including testing forms, functionality and responsiveness.
+            including testing forms, functionality, and responsiveness.
         `,
         image: 'work/zagga.jpg',
         alt: 'A form on Zagga\'s website',
