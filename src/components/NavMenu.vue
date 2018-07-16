@@ -22,6 +22,7 @@
                     <div>
                         <router-link to="/" :class="{ active: page === 'home' }">Home</router-link>
                         <router-link to="/work" :class="{ active: page === 'work' }">Work</router-link>
+                        <router-link to="/open-source" :class="{ active: page === 'open-source' }">Open Source Projects</router-link>
                         <router-link to="/about" :class="{ active: page === 'about' }">About</router-link>
                         <router-link to="/contact" :class="{ active: page === 'contact' }">Contact</router-link>
                     </div>
