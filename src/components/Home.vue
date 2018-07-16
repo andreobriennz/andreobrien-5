@@ -67,6 +67,7 @@ h1,
 h2 {
     /* margin-top: 0;
     margin-bottom: 0.5rem; */
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* $tablet-plus */

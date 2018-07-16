@@ -81,7 +81,7 @@ export default {
 }
 /* BLOILERPLATE */
 * {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif !important;
 }
 
 body {
@@ -90,7 +90,7 @@ body {
 }
 
 .menuColour {
-    transition: 1s;
+    transition: 2s;
 }
 
 .close {
@@ -184,12 +184,12 @@ a:hover {
 
 /* LAYOUT */
 #app {
-    transition: 1s;
+    transition: 2s;
 }
 
 /* Sections */
 article {
-    transition: 1s;
+    transition: 2s;
 }
 
 section {

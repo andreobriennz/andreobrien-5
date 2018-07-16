@@ -114,6 +114,8 @@ a h2 {
 /* skin */
 a {
     color: #fafafa;
+    transition: .5s;
+    border-bottom: solid 2px transparent;
 }
 a:hover,
 a.active {

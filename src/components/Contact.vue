@@ -140,19 +140,19 @@ input,
 textarea,
 .send {
     box-shadow: .25rem 0.25rem .5rem #555;
-    transition: .25s;
+    transition: .5s;
 }
 
 input:hover,
 textarea:hover,
 .send:hover {
-    box-shadow: .25rem 0.25rem 1rem #444;
+    box-shadow: .25rem 0.25rem 2rem #333;
 }
 
 input:focus,
 textarea:focus,
 .send:focus {
-    box-shadow: .25rem 0.25rem 1rem #333;
+    box-shadow: .25rem 0.25rem 2rem #333;
 }
 
 .send {
