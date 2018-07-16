@@ -11,7 +11,7 @@
         </div>
 
         <div class="project">
-            <h2><a href="https://github.com/andreobriennz/skeleton-flexbox">Skeleton-Flexbox</a></h2>
+            <h2><a class="link" href="https://github.com/andreobriennz/skeleton-flexbox">Skeleton-Flexbox</a></h2>
             <p>
                 Skeleton is an excellent and very popular framework (often called boilerplate) which allows rapid development and prototyping. 
                 Unfortunately, the project hasn't been developed in 4 years, causing it to lose some popularity as newer CSS specifications haven't been adopted.
@@ -19,12 +19,12 @@
                 Skeleton-flexbox modernizes the popular Skeleton CSS boilerplate by rewriting it in SCSS modules and replacing outdated modules with newer CSS features.
                 The most prominent example of this is the CSS grid system in Skeleton being replaced by the more modern and developer friendly flexbox grid. 
                 <br /><br />
-                <a href="https://github.com/andreobriennz/skeleton-flexbox">View project</a>
+                <a class="link" href="https://github.com/andreobriennz/skeleton-flexbox">View project</a>
             </p>
         </div>
 
         <div class="project">
-            <h2><a href="https://github.com/andreobriennz/kube-flexbox">Kube-Flexbox</a></h2>
+            <h2><a class="link" href="https://github.com/andreobriennz/kube-flexbox">Kube-Flexbox</a></h2>
             <p>
                 Kube has for a long time been my favorite CSS framework. 
                 The design, typography, and aesthetics stand out as high quality. 
@@ -35,12 +35,12 @@
                 <br /><br />
                 This project is also used by Remarkable to develop the design of generated sites.
                 <br /><br />
-                <a href="https://github.com/andreobriennz/kube-flexbox">View project</a>
+                <a class="link" href="https://github.com/andreobriennz/kube-flexbox">View project</a>
             </p>
         </div>
 
         <div class="project">
-            <h2><a href="https://github.com/andreobriennz/include-html">Include-HTML</a></h2>
+            <h2><a class="link" href="https://github.com/andreobriennz/include-html">Include-HTML</a></h2>
             <p>
                 The goal of include-html is simple 
                 - provide a fast and simple way for developers to include HTML without either a back-end language or full-featured framework.
@@ -53,12 +53,12 @@
                 It also isn't ideal to use a JavaScript library as it makes the HTML examples harder to understand.
                 Therefore include-html lets partials be added in a super readable way - requiring only an HTML attribute to import a file.
                 <br /><br />
-                <a href="https://github.com/andreobriennz/include-html">View project</a>
+                <a class="link" href="https://github.com/andreobriennz/include-html">View project</a>
             </p>
         </div>
 
         <div class="project">
-            <h2><a href="https://github.com/andreobriennz/remarkable">Remarkable</a></h2>
+            <h2><a class="link" href="https://github.com/andreobriennz/remarkable">Remarkable</a></h2>
             <p>
                 Remarkable is a site generator and note management tool based on Python and several popular Python packages. 
                 The project is currently under development (nearing alpha stage).
@@ -73,17 +73,17 @@
                 There is also a GUI (graphical user interface) based on Tkinter, which lets you create and edit projects via a user interface window,
                 (currently has limited functionality)
                 <br /><br />
-                <a href="https://github.com/andreobriennz/remarkable">View project</a>
+                <a class="link" href="https://github.com/andreobriennz/remarkable">View project</a>
             </p>
         </div>
 
         <div class="project">
-            <h2><a href="https://github.com/andreobriennz/simple-gulp-setup">Simple-Gulp-Setup</a></h2>
+            <h2><a class="link" href="https://github.com/andreobriennz/simple-gulp-setup">Simple-Gulp-Setup</a></h2>
             <p>
                 Simple-gulp-setup makes it quick and easy to get started using Gulp for common tasks. 
                 It provides essential functionality such as concatenating files, compiling ES2015 to ES5, compiling SASS/SCSS to CSS, auto-prefixing CSS for improved browser support, and minifying files.
                 <br /><br />
-                <a href="https://github.com/andreobriennz/simple-gulp-setup">View project</a>
+                <a class="link" href="https://github.com/andreobriennz/simple-gulp-setup">View project</a>
             </p>
         </div>
     </section>
@@ -110,6 +110,10 @@ h1 {
     padding-top: 14rem;
 }
 
+h2 .link {
+    text-decoration: none;
+}
+
 p {
     color: #fafafa;
 }
@@ -119,13 +123,13 @@ p {
     padding-bottom: 4rem;
 }
 
-.project a {
+/* .project a {
     color: #fafafa;
 }
 .project a:hover {
     color: #fff;
     text-decoration: underline;
-}
+} */
 
 /* $tablet-plus */
 @media only screen and (min-width: 768px) {
