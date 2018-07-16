@@ -11,8 +11,8 @@
             <p>
                 <strong class="heading-3">About me</strong>
                 <br><br>
-                Andre is a full-stack developer with a passion for learning. He has worked on a variety of websites and web apps,
-                and has commercial experience using JavaScript, CSS and PHP.
+                Andre is a full-stack developer with a passion for learning. He has worked on a variety of websites and web apps
+                and has commercial experience using JavaScript, CSS, and PHP.
                 <br><br>
                 He has a strong passion for JavaScript and programming,
                 and also enjoys developing with frameworks such as React, Vue and Laravel and hosting sites using cloud hosting.
