@@ -10,7 +10,7 @@
   "dependencies": {
     "imperavi-kube": "^6.5.2",
     "jquery": "^3.4.0",
-    "lodash": "^4.17.14",
+    "lodash": "^4.17.20",
     "sw-precache-webpack-plugin": "^0.11.5",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1"
